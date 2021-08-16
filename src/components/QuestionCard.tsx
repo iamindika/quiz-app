@@ -1,4 +1,4 @@
-type Props = {
+interface PropsInterface {
   question: string;
   answers: string[];
   callback: any;
@@ -7,7 +7,7 @@ type Props = {
   totalQuestions: number;
 }
 
-const QuestionCard: React.FC<Props> = ({ 
+const QuestionCard: React.FC<PropsInterface> = ({ 
   question, 
   answers, 
   callback, 
